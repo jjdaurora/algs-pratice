@@ -1,0 +1,31 @@
+# Transform an array such that each index equals the product of the integers of the original array, excluding the original index
+
+Given an array of integers, return a new array such that each element at index i of the new array is the product of all the numbers in the original array except the one at i.
+
+For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120, 60, 40, 30, 24]. If our input was [3, 2, 1], the expected output would be [2, 3, 6].
+
+### MY ANSWER
+
+Includes two higher order methods and requrie division.
+
+Would like to explore a solution not requiring division. 
+
+``` javascript
+    const input = [5, 3, 2]
+
+    function doMath(array) {
+
+        let arr = [];
+        let product = 1;
+
+        input.forEach(i => {
+            product *= i;
+        });
+
+        arr = input.map(i => product / i)
+
+        console.log( arr) ;
+    }
+
+    doMath(input);
+```
