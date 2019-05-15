@@ -22,9 +22,8 @@ Would like to explore a solution not requiring division.
             product *= i;
         });
 
-        arr = input.map(i => product / i)
+       return input.map(i => product / i)
 
-        console.log( arr) ;
     }
 
     doMath(input);
